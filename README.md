@@ -2,7 +2,7 @@
 
 ## Set Up 
 
-You will need to sign up for an api key for the Geocoding Service. You can do that here. 
+You will need to sign up for an api key for the [Geocoding Service](https://api-ninjas.com/api/geocoding).
 
 To get your repo set up, please do the following: 
 1. Fork and clone this repository onto your local machine
@@ -12,8 +12,7 @@ To get your repo set up, please do the following:
 5. `bundle exec figaro install`
 6. In your `application.yml`, assign your geocoding api key with the variable `api-ninja-key`
 
-Make sure it's working locally: 
-
+## Make sure it's working locally: 
 1. Run `bundle exec rspec`. You should have 5 passing tests. 
 2. Run `rails s`, and use postman to try out the endpoint `/api/v1/capital_info/:country`. For example, `/api/v1/capital_info/France` or `/api/v1/capital_info/Nigeria`. You should see a json response that looks something like this: 
     ```json
