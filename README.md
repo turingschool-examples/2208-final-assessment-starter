@@ -8,7 +8,7 @@ To get your repo set up, please do the following:
 1. Fork and clone this repository onto your local machine
 2. `cd final_assessment_starter_2208`
 3. `bundle install`
-4. `rails db:{create}`
+4. `rails db:{create,migrate}`
 5. `bundle exec figaro install`
 6. In your `application.yml`, assign your geocoding api key with the variable `api-ninja-key`
 
