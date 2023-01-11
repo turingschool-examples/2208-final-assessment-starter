@@ -31,7 +31,7 @@ To get your repo set up, please do the following:
     }
     ```
 
-## API you'll be using during the assessment
+## Get Prepped for the New API 
 
 You'll be using the [Places API](https://apidocs.geoapify.com/docs/places/#about). **You'll need an API key for this service.** Please read the following instructions carefully:
 
