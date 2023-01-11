@@ -4,7 +4,7 @@ RSpec.describe 'Get Capital Info' do
     it 'returns capital info as json' do 
         country = "France"
 
-        get "/api/v1/capital_info/#{country}"
+        get "/api/v1/capital_info?country=#{country}"
 
         expect(response).to be_successful
 
