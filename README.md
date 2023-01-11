@@ -14,7 +14,7 @@ To get your repo set up, please do the following:
 
 ## Make sure it's working locally: 
 1. Run `bundle exec rspec`. You should have 5 passing tests. 
-2. Run `rails s`, and use postman to try out the endpoint `/api/v1/capital_info/:country`. For example, `/api/v1/capital_info/France` or `/api/v1/capital_info/Nigeria`. You should see a json response that looks something like this: 
+2. Run `rails s`, and use postman to try out the endpoint `GET /api/v1/capital_info/:country`. For example, `/api/v1/capital_info/France` or `/api/v1/capital_info/Nigeria`. You should see a json response that looks something like this: 
     ```json
         {
         "data": {
