@@ -53,7 +53,7 @@ GEM
     date (3.3.3)
     diff-lcs (1.5.0)
     erubi (1.12.0)
-    faraday (2.7.1)
+    faraday (2.7.2)
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
@@ -96,7 +96,7 @@ GEM
     nokogiri (1.13.10-arm64-darwin)
       racc (~> 1.4)
     pg (1.4.5)
-    pry (0.14.1)
+    pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
     puma (3.12.6)
@@ -134,10 +134,10 @@ GEM
       ffi (~> 1.0)
     rspec-core (3.12.0)
       rspec-support (~> 3.12.0)
-    rspec-expectations (3.12.0)
+    rspec-expectations (3.12.2)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
-    rspec-mocks (3.12.0)
+    rspec-mocks (3.12.2)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
     rspec-rails (5.1.2)
@@ -191,7 +191,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.7.2p137
+   ruby 2.7.4p191
 
 BUNDLED WITH
-   2.3.13
+   2.2.11
