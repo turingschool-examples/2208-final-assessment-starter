@@ -13,6 +13,6 @@ RSpec.describe TouristSight do
         expect(sight).to be_an_instance_of(TouristSight)
         expect(sight.name).to eq("Tour de l'horloge")
         expect(sight.address).to eq("Tour de l'horloge, Allée de l'Horloge, 23200 Aubusson, France")
-        expect(sight.country_code).to eq("515d1f5d627")
+        expect(sight.place_id).to eq("515d1f5d627")
     end 
 end 
