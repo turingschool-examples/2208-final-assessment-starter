@@ -10,5 +10,3 @@ class PlacesService
       end 
   end 
 end 
-
-# https://api.geoapify.com/v2/places?categories=tourism.sights&filter=circle:31.2357257,30.0443879,20000
