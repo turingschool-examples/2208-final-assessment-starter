@@ -6,7 +6,6 @@ RSpec.describe "Get Tourist Sights Info" do
     country = "France"
 
     get "/api/v1/tourist_sights?country=#{country}"
-binding.pry
     expect(response).to be_successful
   end
 end
