@@ -10,6 +10,7 @@ RSpec.describe "Tourist Sight Poros" do
       expect(sight.name).to eq("Pudding Pops Fair")
       expect(sight.formatted_address).to eq("6344 Why is serializer not working, Bend, Or, 97701")
       expect(sight.place_id).to eq("33334444")
+      
     end 
   end
 end
