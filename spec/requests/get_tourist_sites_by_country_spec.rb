@@ -8,6 +8,7 @@ RSpec.describe 'Get tourist sites near capital city' do
     expect(response).to be_successful
 
     sites = JSON.parse(response.body, symbolize_names: true) 
+    expect(sites[:data].count).to eq(20)
     expect(sites).to be_a(Hash)
     expect(sites).to have_key(:data)
     expect(sites[:data][0]).to have_key(:id)
@@ -28,6 +29,8 @@ RSpec.describe 'Get tourist sites near capital city' do
     expect(response).to be_successful
 
     sites = JSON.parse(response.body, symbolize_names: true) 
+    expect(sites[:data].count).to eq(20)
+
     expect(sites[:data][0][:attributes][:name]).to eq("Zero Milestone")
     expect(sites[:data][0][:attributes][:address]).to eq("Zero Milestone, Ellipse Road Northwest, Washington, DC 20500, United States of America")
     expect(sites[:data][0][:attributes][:place_id]).to eq("5145f5d6c0564253c059df9f7d0393724340f00103f9011a2bc6da0100000092030e5a65726f204d696c6573746f6e65")
