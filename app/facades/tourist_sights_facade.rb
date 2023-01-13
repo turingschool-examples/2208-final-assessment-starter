@@ -3,7 +3,7 @@ class TouristSightsFacade
        TouristSightsService.get_tourist_sights(longitude, latitude)
        [:features].map do |attributes|
         # binding.pry
-        TouristSights.new(attributes[:properties])
+        TouristSights.new(attributes[:features][:properties])
        end
       
     end

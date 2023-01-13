@@ -4,7 +4,7 @@ class TouristSights
                 :place_id
     def initialize(attriubutes)
         @name = attributes[:name]
-        @formatted_address = attributes[:formatted_address]
+        @address = attributes[:address]
         @place_id = attributes[:place_id]
     end
 end
