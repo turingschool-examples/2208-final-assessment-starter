@@ -5,6 +5,7 @@ class PlacesService
       req.params[:filter] = "circle:#{long},#{lat},20000"
       req.params[:apiKey] = ENV['api-places-key']
     end
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   def conn
