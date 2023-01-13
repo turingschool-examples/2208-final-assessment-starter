@@ -1,7 +1,7 @@
 class Api::V1::TouristSightsController < ApplicationController 
   def show 
       country = params[:country]
-      capital = CountryFacade.capital_info(country)
-      render json: CapitalSerializer.new(capital)
+      capital = TouristSightsFacade.tourist_sights(country)
+      render json: TouristSightsSerializer.new(tourist_sights)
   end 
 end 
