@@ -1,5 +1,5 @@
 class SightSerializer 
     include JSONAPI::Serializer
     
-    # set_id {nil}
+    set_id {nil}
 end 
