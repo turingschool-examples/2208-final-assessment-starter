@@ -1,16 +1,15 @@
 class TouristSightsService
-  def self.get_tourist_sights(lat, lon)
-   binding.pry
-    response = conn.get('/v2/places', { categories: 'tourism.sights', filter: "circle:#{lon},#{lat},20000" })
-    JSON.parse(response.body, symbolize_names: true)
+  def self.get_tourist_sights(longitude, latitude)
+     get_url("v2/places?filter=circle:#{longitude},#{latitude},20000&categories=tourism.sights")
+  end
+
+  def self.get_url(url)
+    JSON.parse(conn.get(url).body, symbolize_names: true)
   end
 
    def self.conn
     Faraday.new('https://api.geoapify.com') do |f|
       f.params['apiKey'] = ENV['geoapify-key']
-      f.params['category'] = 'tourism.sights'
-       JSON.parse(response.body, symbolize_names: true)
-
     end
   end
 end

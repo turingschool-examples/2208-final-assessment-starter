@@ -3,6 +3,6 @@ class TouristSightsSerializer
 
     set_id {nil}
     attributes :name,
-               :full_address,
+               :formatted_address,#not full per instructions
                :place_id
 end 
