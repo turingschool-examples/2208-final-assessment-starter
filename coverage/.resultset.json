@@ -5,9 +5,22 @@
         "lines": [
           1,
           1,
-          0,
-          0,
-          0,
+          5,
+          5,
+          5,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/facades/places_facade.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          40,
+          null,
           null,
           null
         ]
@@ -18,11 +31,24 @@
           1,
           null,
           1,
-          0,
-          0,
-          0,
-          0,
-          0,
+          6,
+          6,
+          6,
+          6,
+          6,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/poro/tourist_sight.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          41,
+          41,
+          41,
           null,
           null
         ]
@@ -31,12 +57,12 @@
         "lines": [
           1,
           1,
-          0,
-          0,
+          6,
+          6,
           null,
           null,
           1,
-          0,
+          6,
           null,
           null
         ]
@@ -45,99 +71,104 @@
         "lines": [
           1,
           1,
-          0,
-          0,
+          6,
+          6,
           null,
           null,
           1,
-          0,
-          0,
+          6,
+          6,
           null,
           null,
           null
         ]
       },
-      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/mailers/application_mailer.rb": {
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/services/places_service.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/models/application_record.rb": {
-        "lines": [
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/serializers/capital_serializer.rb": {
-        "lines": [
-          0,
-          0,
+          1,
+          1,
+          1,
+          36,
           null,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/jobs/application_job.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/controllers/application_controller.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
+          null,
+          1,
+          1,
+          30,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          null,
+          null,
+          3,
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null,
+          null
+        ]
       },
       "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/controllers/api/v1/capitals_controller.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       },
-      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/channels/application_cable/connection.rb": {
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/controllers/application_controller.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          null
+        ]
       },
-      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/channels/application_cable/channel.rb": {
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/serializers/capital_serializer.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          1,
+          null,
+          2,
+          1,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/controllers/api/v1/places_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/serializers/tourist_sight_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          21,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1673629469
+    "timestamp": 1673634554
   }
 }

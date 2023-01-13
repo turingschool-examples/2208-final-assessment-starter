@@ -2,7 +2,8 @@ require 'rails_helper'
 
 RSpec.describe PlacesService do
   it '.tourist_sights' do
-    response = PlacesService.tourist_sights(latitude, longitude)
+    capital = CountryFacade.capital_info('France')
+    response = PlacesService.tourist_sights(capital.latitude, capital.longitude)
 
     expect(response).to be_a Hash
     expect(response).to have_key :type

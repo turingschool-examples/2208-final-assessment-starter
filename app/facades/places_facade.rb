@@ -3,7 +3,7 @@ class PlacesFacade
     response = PlacesService.tourist_sights(lat, long)
     sights = response[:features]
     sights.map do |sight_info|
-      Place.new(sight_info)
+      TouristSight.new(sight_info[:properties])
     end
   end
 end

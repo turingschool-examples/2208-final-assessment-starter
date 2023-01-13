@@ -1,12 +1,26 @@
+module Faraday
+  module NestedParamsEncoder
+    def self.escape(arg)
+      arg
+    end
+  end
+  module FlatParamsEncoder
+    def self.escape(arg)
+      arg
+    end
+  end
+end
+
 class PlacesService
   def self.tourist_sights(lat, long)
     response = conn.get("/v2/places") do |f|
-      f.params['catergories'] = 'tourism.sights'
-      f.params['filter'] = "circle:#{lat},#{long},20000"
-      f.params['bias'] = 'proximity:-105.27091225000001,40.014928499999996'
+      f.params['categories'] = 'tourism.sights'
+      f.params['filter'] = "circle:#{long},#{lat},20000"
+      f.params['bias'] = "proximity:#{long},#{lat}"
       f.params['limit'] = '20'
+      f.options.params_encoder = Faraday::FlatParamsEncoder
     end
-    
+
     JSON.parse(response.body, symbolize_names: true)
   end
 
