@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 13 Jan 2023 01:14:11 GMT
+      - Fri, 13 Jan 2023 17:04:30 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -31,9 +31,9 @@ http_interactions:
       Ratelimit-Limit:
       - '400'
       Ratelimit-Remaining:
-      - '396'
+      - '392'
       Ratelimit-Reset:
-      - '86'
+      - '99'
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Headers:
@@ -41,23 +41,23 @@ http_interactions:
       Etag:
       - W/"7a-Px3q6KxlWJ0pxJ2pkcuIxi/wvvA"
       Cache-Control:
-      - max-age=64657
+      - max-age=74641
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=IQEHTh9y9Nq3n11Rd0Ao%2FEld8BBFHv1O%2FHQ1jAJFmKYi%2Bo6k95tKoGyg%2FRgbMxsNqz4H1EvpgbPP6KcN5VqnECG7GyP%2Bs242fv2qvnc2KdXS0gjHxvMSPhWSyhzCYgVfLeuU3FJ%2FrTvIW5EQdewNFF0%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=jGZKN%2FsSBxlPitipMC1lH5DJMqn6pF5DMCgrFmI%2FuCavIt0aEjYJb9Cq3vdvCwp4NS1At17cPCgJZ6Bbu3b4dlkIALWKXbjPuwGasmPxCYBP3edIhcFd3CiLG2r5tqxLeJPyDkZeP7DFYhfiVv6fDZE%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 788a460b8e142752-DEN
+      - 788fb620cda31f51-DEN
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
       string: '{"error":false,"msg":"country and capitals retrieved","data":{"name":"France","capital":"Paris","iso2":"FR","iso3":"FRA"}}'
-  recorded_at: Fri, 13 Jan 2023 01:14:11 GMT
+  recorded_at: Fri, 13 Jan 2023 17:04:30 GMT
 recorded_with: VCR 6.1.0
