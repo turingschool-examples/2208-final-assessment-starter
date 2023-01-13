@@ -6,4 +6,8 @@ RSpec.describe TouristSitesFacade do
     expect(sites[0]).to be_an_instance_of(TouristSite)
   end
 
+  it 'returns nothing if state is invalid', :vcr do 
+    sites = TouristSitesFacade.tourist_sites("dog")
+    expect(sites).to eq(nil) 
+  end
 end
