@@ -1,4 +1,4 @@
-class Capital
+class TouristSight
     attr_reader :name, :address, :place_id
 
     def initialize(properties)

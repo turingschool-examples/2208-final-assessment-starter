@@ -2,14 +2,14 @@ require 'rails_helper'
 
 RSpec.describe 'Get Tourist Sights' do
     it 'returns tourist sights as json' do
-        country = "France"
+        country = "United States"
 
         get "/api/v1/tourist_sights?country=#{country}"
 
         expect(response).to be_successful
-
         parsed_response = JSON.parse(response.body,symbolize_names: true)
 
+        require "pry"; binding.pry
         expect(parsed_response).to be_a(Hash)
         expect(parsed_response).to have_key(:data)
         expect(parsed_response[:data]).to be_an(Array)
