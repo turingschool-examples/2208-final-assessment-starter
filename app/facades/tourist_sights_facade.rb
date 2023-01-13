@@ -6,12 +6,8 @@ class TouristSightsFacade
     lon = a.longitude
     lat = a.latitude
     results = PlacesService.tourist_site(lon,lat)
-    # TouristSights.new(results)
-    # require 'pry'; binding.pry
     a = results[:features].map do |feat|
-      # require 'pry'; binding.pry
       TouristSights.new(feat)
     end
-    # require 'pry'; binding.pry
   end 
 end 
