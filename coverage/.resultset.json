@@ -1,0 +1,143 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/facades/country_facade.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/poro/capital.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/services/countries_now_service.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/services/geocoding_service.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/models/application_record.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/serializers/capital_serializer.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/controllers/api/v1/capitals_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/astrid/z_turing/3m/assesments/2208-final-assessment-starter/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1673629469
+  }
+}
