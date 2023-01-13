@@ -19,7 +19,7 @@ http_interactions:
       message: Not Found
     headers:
       Date:
-      - Fri, 13 Jan 2023 18:26:58 GMT
+      - Fri, 13 Jan 2023 19:22:49 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -41,23 +41,23 @@ http_interactions:
       Etag:
       - W/"28-7q12t32Dl81iTr3UbN9Hq8PLD2U"
       Cache-Control:
-      - max-age=83457
+      - max-age=80106
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=drD4UBZTlP3vX6nVBz3dUHVd5q2dfmziTPslPfxJKJICwXlt6fWbd1AJmKLdWrYAOLS%2F9Zv0kv1fKJy96h7YhzO%2BDErlTg7ROZ9Y8zDTykhoaICYIx2MfFajUQKvwtKcGqv%2BSsc%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0v5x%2F20OJhDHtQxSMLtog7N9cPZjgTBIbn4Z4WrkrGoScLOiRmOPWMounYRCgxKnMnw6X3ynqZegU4%2BZmWglGJ4sHxR%2F7z%2FNiqCuFngaBWuF3ACYaaRik%2FmS8mQAcUm%2FMynKKYY%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 78902eea6ccb1f58-DEN
+      - 789080ba28c4c7c1-DEN
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: UTF-8
       string: '{"error":true,"msg":"country not found"}'
-  recorded_at: Fri, 13 Jan 2023 18:26:58 GMT
+  recorded_at: Fri, 13 Jan 2023 19:22:49 GMT
 recorded_with: VCR 6.1.0
