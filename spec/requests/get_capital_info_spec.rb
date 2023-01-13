@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Get Capital Info' do 
+RSpec.describe 'Get Capital Info', :vcr do 
     it 'returns capital info as json' do 
         country = "France"
 

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Get Tourist Sights' do 
+RSpec.describe 'Get Tourist Sights', :vcr do 
     it 'returns tourist sights as json' do 
         country = "France"
 
