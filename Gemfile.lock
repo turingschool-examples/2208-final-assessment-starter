@@ -103,8 +103,6 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.10-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.13.10-x86_64-darwin)
-      racc (~> 1.4)
     pg (1.4.5)
     pry (0.14.2)
       coderay (~> 1.1)
@@ -186,13 +184,11 @@ GEM
     tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uri (0.12.0)
-
     vcr (6.1.0)
     webmock (3.18.1)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
-
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
