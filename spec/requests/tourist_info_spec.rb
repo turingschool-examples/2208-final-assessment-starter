@@ -8,6 +8,7 @@ RSpec.describe 'Get Capital Info' do
         expect(response).to be_successful
 
         info = JSON.parse(response.body,symbolize_names: true)
-        binding.pry
+        
+        expect(info).to be_a(Hash)
     end
 end 
