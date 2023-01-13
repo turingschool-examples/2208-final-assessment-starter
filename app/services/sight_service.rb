@@ -6,7 +6,7 @@ class SightService
     end
 
     def self.show_me(country, map)
-        response = conn.get("/v2/places?categories=tourism.sights&filter=circle:#{map},20000&country=#{country}&limit=5")
+        response = conn.get("/v2/places?categories=tourism.sights&filter=circle:#{map},20000&country=#{country}&limit=20")
 
         JSON.parse(response.body,symbolize_names: true)
     end

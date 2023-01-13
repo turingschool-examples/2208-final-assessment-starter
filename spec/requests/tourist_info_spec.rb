@@ -17,6 +17,6 @@ RSpec.describe 'Get Capital Info' do
         expect(info[:data][0][:attributes]).to have_key(:name)
         expect(info[:data][0][:attributes]).to have_key(:address)
         expect(info[:data][0][:attributes]).to have_key(:place_id)
-
+        binding.pry
     end
 end 
