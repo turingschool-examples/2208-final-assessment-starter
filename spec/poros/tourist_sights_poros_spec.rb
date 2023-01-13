@@ -4,9 +4,9 @@ RSpec.describe TouristSights do
   describe 'initialize' do
     it 'exists' do
     attributes = {
-        name: "",
-        formatted_address: "",
-        place_id: ""
+        name: "Paris",
+        formatted_address: "121354 Remond Paris",
+        place_id: "!@#^*@#^*(@*)&"
     }
     tourist_sight = TouristSights.new(attributes)
     expect(tourist_sight).to be_instance_of(TouristSights)
