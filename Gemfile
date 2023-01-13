@@ -17,6 +17,9 @@ group :development, :test do
   gem 'pry'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
+  gem 'simplecov'
+  gem 'webmock'
+  gem 'vcr'
 end
 
 group :development do

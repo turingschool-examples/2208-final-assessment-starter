@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Get Tourist Sights' do
   describe 'it returns tourist sights' do
     it 'returns tourist sights' do
+      VCR.insert_cassette 'tourist_sight_json'
       country = "France"
 
       get "/api/v1/tourist_sights?country=#{country}"
@@ -19,6 +20,7 @@ RSpec.describe 'Get Tourist Sights' do
       expect(parsed_response[:data][0][:attributes]).to have_key(:name)
       expect(parsed_response[:data][0][:attributes]).to have_key(:address)
       expect(parsed_response[:data][0][:attributes]).to have_key(:place_id)
+      VCR.eject_cassette
     end
   end
 end
