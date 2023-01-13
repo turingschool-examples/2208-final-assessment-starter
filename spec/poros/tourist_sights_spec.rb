@@ -2,9 +2,9 @@ require 'rails_helper'
 
 RSpec.describe TouristSights do 
   it 'exists' do
-    attributes = File.read("spec/fixtures/france.json")
-    parsed = JSON.parse(attributes, symbolize_names: true)
-    properties = parsed[:features]
+    # attributes = File.read("spec/fixtures/france.json")
+    # parsed = JSON.parse(attributes, symbolize_names: true)
+    # properties = parsed[:features]
     # require 'pry'; binding.pry
     # sight = TouristSights.new(properties)
     # expect(sight).to be_a TouristSight

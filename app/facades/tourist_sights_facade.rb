@@ -9,7 +9,7 @@ class TouristSightsFacade
     # TouristSights.new(results)
     # require 'pry'; binding.pry
     a = results[:features].map do |feat|
-      require 'pry'; binding.pry
+      # require 'pry'; binding.pry
       TouristSights.new(feat)
     end
     # require 'pry'; binding.pry
