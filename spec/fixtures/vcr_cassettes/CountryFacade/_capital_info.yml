@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 13 Jan 2023 16:45:56 GMT
+      - Fri, 13 Jan 2023 17:25:01 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41,25 +41,25 @@ http_interactions:
       Etag:
       - W/"7b-768HfpVCKcoVCeS3iIv9bzGEfio"
       Cache-Control:
-      - max-age=75751
+      - max-age=73406
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=fCC5XIXqTXsvWO5%2B5GfBQ%2F2gYIvoVHs%2Bjafn%2FlmUlZmDCJE%2Fs7jC%2BukjNxCMZWm3FDF%2BsExmCfCwzadwrUQRIuCumMVb59CvJs4%2BhUgZZxy2i6ixo%2BBLOJ1Hjc1sQNUQ5bpJph4%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=GP67cCYIJle2ruHx7EYnmgqHE%2FDzPZ3SgRHuxcKSZ%2F8DvGL7vS4rqputW64GDO3DOKF2wtGTUixSBkJ1biCzqvEkE1QAY%2Bouln2SnN7vRQ9ieOoxkvLvRMaO1tPFl%2BkUwFeHRys%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 788f9aea3cf01f98-DEN
+      - 788fd429b85e2707-DEN
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
       string: '{"error":false,"msg":"country and capitals retrieved","data":{"name":"Nigeria","capital":"Abuja","iso2":"NG","iso3":"NGA"}}'
-  recorded_at: Fri, 13 Jan 2023 16:45:56 GMT
+  recorded_at: Fri, 13 Jan 2023 17:25:01 GMT
 - request:
     method: get
     uri: https://api.api-ninjas.com/v1/geocoding?city=Abuja&country=Nigeria
@@ -87,9 +87,9 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Fri, 13 Jan 2023 16:45:57 GMT
+      - Fri, 13 Jan 2023 17:25:02 GMT
       X-Amzn-Requestid:
-      - 26236e41-58d4-469a-a3d2-e0f0c99741bf
+      - d9907075-8955-4530-86eb-41dcb04b15e1
       Access-Control-Allow-Origin:
       - "*"
       Allow:
@@ -97,19 +97,19 @@ http_interactions:
       Access-Control-Allow-Headers:
       - "*"
       X-Amz-Apigw-Id:
-      - esKeuG2YPHcF4GA=
+      - esQNHGfWPHcFU5w=
       Access-Control-Allow-Methods:
       - GET, OPTIONS, POST
       X-Amzn-Trace-Id:
-      - Root=1-63c18ac4-26207acb7a059a1733edaec5;Sampled=0
+      - Root=1-63c193ed-0bf45c142e9be064571442b8;Sampled=0
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 056799adad256ab111ed778c35e4393a.cloudfront.net (CloudFront)
+      - 1.1 91ce9b89afcd32f5bca16bfe69ee21c2.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-P1
       X-Amz-Cf-Id:
-      - Eau9ozUSWtfx5lpXPcIxxIaPZMM_sHn4V-Qhjt9_4F1UxOC_xVp1vg==
+      - Ytw1drrV8GqkN3lOw6Cr2vE0wi5HdME2wEq-p2kpdxqowbhgeTIC8A==
     body:
       encoding: UTF-8
       string: '[{"name": "Abuja", "latitude": 9.0643305, "longitude": 7.4892974, "country":
@@ -119,5 +119,5 @@ http_interactions:
         "state": "Kano State"}, {"name": "Abuja", "latitude": 11.6264, "longitude":
         8.49162, "country": "NG", "state": "Kano State"}, {"name": "Abuja", "latitude":
         9.25, "longitude": 6.933333, "country": "NG", "state": "Federal Capital Territory"}]'
-  recorded_at: Fri, 13 Jan 2023 16:45:57 GMT
+  recorded_at: Fri, 13 Jan 2023 17:25:02 GMT
 recorded_with: VCR 6.1.0
