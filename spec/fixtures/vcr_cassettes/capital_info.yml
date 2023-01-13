@@ -1,0 +1,124 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://countriesnow.space/api/v0.1/countries/capital/q?country=France
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 13 Jan 2023 16:20:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Ratelimit-Limit:
+      - '400'
+      Ratelimit-Remaining:
+      - '392'
+      Ratelimit-Reset:
+      - '99'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Etag:
+      - W/"7a-Px3q6KxlWJ0pxJ2pkcuIxi/wvvA"
+      Cache-Control:
+      - max-age=77296
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5KPJU2j08SgzEqHKNIetSxK57A4d64ePw4KyU1qhSYrhsKaaTCD%2BM85hStrZ2aYN50tkhqKQUgMBcUkgV2GLEF0QTuSF3BxV3sFxPZp3Yz1wCOALMTeoY4QJYBUjQevl43ipRFc%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 788f754d6e53276f-DEN
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":false,"msg":"country and capitals retrieved","data":{"name":"France","capital":"Paris","iso2":"FR","iso3":"FRA"}}'
+  recorded_at: Fri, 13 Jan 2023 16:20:15 GMT
+- request:
+    method: get
+    uri: https://api.api-ninjas.com/v1/geocoding?city=Paris&country=France
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - V3WzdwsYgwUWmKLSZjaUzg==6pIPOPuuH1f5ZARd
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '578'
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 13 Jan 2023 16:20:16 GMT
+      X-Amzn-Requestid:
+      - 40694e68-58a2-4b15-b3d2-32899056b45e
+      Access-Control-Allow-Origin:
+      - "*"
+      Allow:
+      - GET, OPTIONS, POST
+      Access-Control-Allow-Headers:
+      - "*"
+      X-Amz-Apigw-Id:
+      - esGuAHMCPHcFmcQ=
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, POST
+      X-Amzn-Trace-Id:
+      - Root=1-63c184bf-6adb79512931248c4fdd403d;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 371ed2ced863124442eb4fa765ae2a96.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-P1
+      X-Amz-Cf-Id:
+      - JxshkNLaeS-t-xWP5HedZDDWknmK1VFfNscLIQmrM1s_I5Vb4oBnPQ==
+    body:
+      encoding: UTF-8
+      string: '[{"name": "Paris", "latitude": 48.8588897, "longitude": 2.3200410217200766,
+        "country": "FR", "state": "Ile-de-France"}, {"name": "Paris", "latitude":
+        48.8534951, "longitude": 2.3483915, "country": "FR", "state": "Ile-de-France"},
+        {"name": "Paris", "latitude": 48.8588897, "longitude": 2.3200410217200766,
+        "country": "FR", "state": "Ile-de-France"}, {"name": "Parisot", "latitude":
+        44.6370913, "longitude": 0.77482, "country": "FR", "state": "Nouvelle-Aquitaine"},
+        {"name": "Paris", "latitude": 44.5626798, "longitude": -0.865783, "country":
+        "FR", "state": "Nouvelle-Aquitaine"}]'
+  recorded_at: Fri, 13 Jan 2023 16:20:16 GMT
+recorded_with: VCR 6.1.0
