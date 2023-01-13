@@ -16,5 +16,10 @@ RSpec.describe 'Get tourist sites near capital city' do
     expect(sites[:data][0][:attributes]).to have_key(:name)
     expect(sites[:data][0][:attributes]).to have_key(:address)
     expect(sites[:data][0][:attributes]).to have_key(:place_id)
+
+    expect(sites[:data][0][:attributes][:name]).to eq("Zero Milestone")
+    expect(sites[:data][0][:attributes][:address]).to eq("Ellipse Road Northwest, Washington, DC 20500, United States of America")
+    expect(sites[:data][0][:attributes][:place_id]).to eq("5145f5d6c0564253c059df9f7d0393724340f00103f9011a2bc6da0100000092030e5a65726f204d696c6573746f6e65")
+
   end
 end
