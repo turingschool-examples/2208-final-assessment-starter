@@ -24,3 +24,8 @@
 
 # Ignore application configuration
 /config/application.yml
+
+coverage
+.vscode/settings.json
+.DS_Store
+/spec/fixtures
