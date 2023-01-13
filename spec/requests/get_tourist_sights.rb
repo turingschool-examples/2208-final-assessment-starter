@@ -5,8 +5,8 @@ RSpec.describe 'GET api/v1/tourist_sights' do
     country = 'France'
 
     get "/api/v1/tourist_sights?country=#{country}"
-
-    expect(response).to have_status 200
+    
+    expect(response).to be_successful
 
     parsed_response = JSON.parse(response.body, symbolize_names: true)
 
