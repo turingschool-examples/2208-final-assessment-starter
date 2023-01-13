@@ -17,7 +17,8 @@ class Api::V1::TouristSightsController < ApplicationController
     # tourist_sights = parsed[:features].map do |f|
     #   TouristSight.new(f)
     # end
-    tourist_sights = TouristSightFacade.get_tourist_sights(country)
+    # require 'pry'; binding.pry
+    tourist_sights = TouristSightFacade.get_tourist_sight(params[:country])
 
     render json: TouristSightSerializer.new(tourist_sights)
   end
