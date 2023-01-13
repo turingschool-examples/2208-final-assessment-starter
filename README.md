@@ -38,3 +38,55 @@ In tomorrow's assessment, you'll be using the [Places API](https://apidocs.geoap
 1. Visit the [Places API](https://apidocs.geoapify.com/docs/places/#about) to see the capabilities of the API to consume.
 2. Follow [these](https://apidocs.geoapify.com/docs/places/#about:~:text=Authentication%20and%20API%20key) directions to set up an account and get your API key set up. 
 3. We suggest that you set up Postman to call several different endpoints. Experiment with different parameters so you can see what they do, how you could use things to filter data, etc.
+
+You will be using the Places API to search for tourist sights based on the lat/long of the capital city of the country that is provided by the user. Presume that your user will give a valid country. (you can handle edge cases later)
+Your endpoint should follow this format:
+GET /api/v1/tourist_sights?country=France
+Please do not deviate from the names of the endpoint or query parameters. Be sure it is called "tourist_sights" and "country", respectively.
+Your API will return:
+- A collection of all found tourist sights within a 20000 meter radius of the capital city.
+- Each sight should list its:
+  - name
+  - formatted address
+  - place_id (from the Place API)
+Your response should be in the format below:
+{
+    "data": [
+        {
+            "id": null,
+            "type": "tourist_sight",
+            "attributes": {
+                "name": "Tour de l'horloge",
+                "address": "Tour de l'horloge, Allée de l'Horloge, 23200 Aubusson, France",
+                "place_id": "51d28..."
+            }
+        },
+        {
+            "id": null,
+            "type": "tourist_sight",
+            "attributes": {
+                "name": "Le Château",
+                "address": "Le Château, D 18, 23150 Ahun, France",
+                "place_id": "51934..."
+            }
+        },
+        {
+            "id": null,
+            "type": "tourist_sight",
+            "attributes": {
+                "name": "Le Chapître",
+                "address": "Le Chapître, Rue du Chapitre, 23200 Aubusson, France",
+                "place_id": "517182..."
+            }
+        },
+        ...,
+        ...,
+    ]
+}
+Notes:
+1. You can utilize the existing code to identify the lat/long of the capital city for the provided country.
+2. For the Places API, use the circle radius, and the tourism:sights category
+3. You are expected to test ALL code that you write.
+4. You are expected to commit at least once every 15 minutes or so.
+5. Do not make a PR until we tell you to. (around 11:50am MT)
+6. Take a deep breath, you've got this.

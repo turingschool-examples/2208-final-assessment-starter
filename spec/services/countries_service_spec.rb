@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe CountriesNowService do 
+RSpec.describe CountriesNowService, :vcr do 
     it '.capital_info' do 
         response = CountriesNowService.get_capital_city("France")
 
