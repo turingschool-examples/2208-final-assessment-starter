@@ -9,20 +9,34 @@ class TouristSights
   end
 
   def get_name(input)
-    input[:features].map do |feat|
-      feat[:properties][:name]
-    end
+    input[:properties][:name]
   end
 
   def get_address(input)
-    input[:features].map do |feat|
-      feat[:properties][:formatted]
-    end
+    input[:properties][:formatted]
+    
   end
 
   def get_place_id(input)
-    input[:features].map do |feat|
-      feat[:properties][:place_id]
-    end
+    input[:properties][:place_id]
+    
   end
+
+  # def get_name(input)
+  #   input[:features].map do |feat|
+  #     feat[:properties][:name]
+  #   end
+  # end
+
+  # def get_address(input)
+  #   input[:features].map do |feat|
+  #     feat[:properties][:formatted]
+  #   end
+  # end
+
+  # def get_place_id(input)
+  #   input[:features].map do |feat|
+  #     feat[:properties][:place_id]
+  #   end
+  # end
 end

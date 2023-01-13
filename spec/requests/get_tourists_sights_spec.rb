@@ -12,13 +12,11 @@ RSpec.describe 'Get Tourist sights Info' do
 
         expect(parsed_response).to be_a(Hash)
         expect(parsed_response).to have_key(:data)
-        expect(parsed_response[:data]).to have_key(:id)
-        expect(parsed_response[:data]).to have_key(:type)
-        expect(parsed_response[:data]).to have_key(:attributes)
-        expect(parsed_response[:data][:attributes]).to have_key(:city)
-        expect(parsed_response[:data][:attributes]).to have_key(:country)
-        expect(parsed_response[:data][:attributes]).to have_key(:country_code)
-        expect(parsed_response[:data][:attributes]).to have_key(:latitude)
-        expect(parsed_response[:data][:attributes]).to have_key(:longitude)
+        expect(parsed_response[:data].first).to have_key(:id)
+        expect(parsed_response[:data].first).to have_key(:type)
+        expect(parsed_response[:data].first).to have_key(:attributes)
+        expect(parsed_response[:data][0][:attributes]).to have_key(:name)
+        expect(parsed_response[:data][0][:attributes]).to have_key(:address)
+        expect(parsed_response[:data][0][:attributes]).to have_key(:place_id)
     end 
 end 
