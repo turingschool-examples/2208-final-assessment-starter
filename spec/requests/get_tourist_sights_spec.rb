@@ -9,7 +9,7 @@ RSpec.describe 'Get Tourist Sights' do
         expect(response).to be_successful
 
         parsed_response = JSON.parse(response.body,symbolize_names: true)
-        
+        binding.pry
         expect(parsed_response).to be_a(Hash)
         expect(parsed_response).to have_key(:data)
         expect(parsed_response[:data].first).to have_key(:id)
