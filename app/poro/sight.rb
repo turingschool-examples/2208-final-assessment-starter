@@ -5,7 +5,7 @@ class Sight
 
   def initialize(data)
     @name = data[:name]
-    @address = "#{data[:name]}, #{data[:street]}, #{data[:postcode]} #{data[:city]}, #{data[:country]}"
+    @address = data[:formatted]
     @place_id = data[:place_id]
   end
 end

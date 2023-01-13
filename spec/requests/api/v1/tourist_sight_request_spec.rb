@@ -13,10 +13,10 @@ RSpec.describe 'tourist sight api' do
     expect(@sights_list).to be_a(Hash)
   end
 
-  it 'each sight includes name, formatted address, and place_id' do
-      t_sights = @sights_list[:data]
+  it 'sight includes name, address, and id' do
+      sights = @sights_list[:data]
 
-      t_sights.each do |sight|
+      sights.each do |sight|
         expect(sight).to have_key :id
         expect(sight).to have_key :type
         expect(sight).to have_key :attributes

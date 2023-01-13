@@ -1,4 +1,7 @@
-class PlacesService 
+require 'faraday'
+require 'json'
+
+class SightsService 
   def self.conn
     Faraday.new('https://api.geoapify.com') do |f|
       f.params['apiKey'] = ENV['geo-api-key']
