@@ -6,4 +6,3 @@ Rails.application.routes.draw do
       resources :tourist_sights, only: %i[index]
     end
   end
-end
