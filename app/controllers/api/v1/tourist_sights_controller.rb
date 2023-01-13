@@ -11,12 +11,11 @@ class Api::V1::TouristSightsController < ApplicationController
     end
 
     response = conn.get("/v2/places")
-require 'pry'; binding.pry
+
     parsed = JSON.parse(response.body, symbolize_names: true)
 
     @tourist_sights = parsed[:features].map do |f|
       TouristSight.new(f)
     end
-    
   end
 end
