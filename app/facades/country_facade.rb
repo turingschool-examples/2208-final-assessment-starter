@@ -3,5 +3,6 @@ class CountryFacade
         capital = CountriesNowService.get_capital_city(country)[:data][:capital]
         capital_info = GeocodingService.capital_info(capital,country).first
         Capital.new(capital_info, country)
+        # require 'pry'; binding.pry
     end 
 end 

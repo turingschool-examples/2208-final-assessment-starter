@@ -1,10 +1,10 @@
 RSpec.describe GeoapifyService do
   describe 'gets geoapify API' do
-    it 'retrieves api data' do
+    it 'connect to api data' do
       expect(GeoapifyService.new).to be_a(GeoapifyService)
     end
 
-    it 'has sight info for coordinates' do
+    it 'has sight info for location' do
       response = GeoapifyService.tourist_sight(48.8566, 2.3522)
 
       expect(response).to be_a(Hash)
