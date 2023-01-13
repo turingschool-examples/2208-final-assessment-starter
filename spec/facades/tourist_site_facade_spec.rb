@@ -9,7 +9,7 @@ RSpec.describe TouristSiteFacade do
         expect(sites).to be_an(Array)
         expect(sites[0]).to be_instance_of(TouristSite)
         expect(sites[0].name).to_not eq(nil)
-        expect(sites[0].formatted_address).to_not eq(nil)
+        expect(sites[0].address).to_not eq(nil)
         expect(sites[0].place_id).to_not eq(nil)
       end
     end 

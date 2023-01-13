@@ -16,7 +16,7 @@ RSpec.describe 'Get tourist sight info' do
     expect(parsed_response[:data][0]).to have_key(:type)
     expect(parsed_response[:data][0]).to have_key(:attributes)
     expect(parsed_response[:data][0][:attributes]).to have_key(:name)
-    expect(parsed_response[:data][0][:attributes]).to have_key(:formatted_address)
+    expect(parsed_response[:data][0][:attributes]).to have_key(:address)
     expect(parsed_response[:data][0][:attributes]).to have_key(:place_id)
   end 
 end 
