@@ -12,7 +12,6 @@ RSpec.describe Capital do
         country = "Nigeria"
 
         capital = Capital.new(capital_info,country)
-
         expect(capital).to be_an_instance_of(Capital)
         expect(capital.city).to eq("Abuja")
         expect(capital.latitude).to eq(9.0643305)
