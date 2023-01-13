@@ -1,6 +1,6 @@
 require 'rails_helper'
 RSpec.describe TouristSitesService do 
-  it 'returns tourist sights within 20000m of a latitude and longitude' do 
+  it 'returns tourist sights within 20000m of a latitude and longitude', :vcr do 
     response = TouristSitesService.nearby_tourist_sites("-77.0365427", "38.8950368")
   
     expect(response).to be_a Hash 

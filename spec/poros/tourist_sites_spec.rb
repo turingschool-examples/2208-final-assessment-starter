@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe TouristSite do 
-  it 'exists and has attributes' do 
+  it 'exists and has attributes', :vcr do 
     tourist_sites = TouristSitesFacade.tourist_sites("united states")
     expect(tourist_sites).to be_an Array 
     site = tourist_sites[0]

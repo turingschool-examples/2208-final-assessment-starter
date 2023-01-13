@@ -1,7 +1,7 @@
 require 'rails_helper' 
 
 RSpec.describe 'Get tourist sites near capital city' do 
-  it 'returns tourist site info as json' do 
+  it 'returns tourist site info as json', :vcr do 
 
     get "/api/v1/tourist_sites?country=united states"
 
