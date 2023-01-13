@@ -30,3 +30,5 @@ end
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem "rubocop", "~> 1.43"
+
+gem "simplecov", "~> 0.22.0", :group => :test
