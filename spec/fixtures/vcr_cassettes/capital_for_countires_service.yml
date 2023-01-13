@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 13 Jan 2023 16:24:04 GMT
+      - Fri, 13 Jan 2023 16:53:19 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41,23 +41,23 @@ http_interactions:
       Etag:
       - W/"7a-Px3q6KxlWJ0pxJ2pkcuIxi/wvvA"
       Cache-Control:
-      - max-age=77067
+      - max-age=75312
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=lCJaxCKhEFM4a7uE0gaoy14jCryDtbbuwSWJnM4vt4f2zRNkAbPBdzo5V1CgOjDtiPWgXzIeC9yqmVuFCU3OD0ANyRjV3VSO7yMyhTVJOzKs73b7eNiGTEfysRm1ACzV%2Bakjvyg%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5LIkyqqxWe%2BVOHU18DBx2n9AyiOZUijnSu3LELXdGmWwRxpklxTLqJ33qMoMvP1R4umDrNBBrMtc8RAwi45tOPg%2FekAraFV%2BlWZO4k2z7b0FcfoO8ASgrV0Y3v%2FozNV%2BdtFgyKA%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 788f7ae4cf07290f-DEN
+      - 788fa5bf1c6b1f49-DEN
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
       string: '{"error":false,"msg":"country and capitals retrieved","data":{"name":"France","capital":"Paris","iso2":"FR","iso3":"FRA"}}'
-  recorded_at: Fri, 13 Jan 2023 16:24:04 GMT
+  recorded_at: Fri, 13 Jan 2023 16:53:19 GMT
 recorded_with: VCR 6.1.0
