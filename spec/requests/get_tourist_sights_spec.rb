@@ -22,7 +22,7 @@ RSpec.describe 'Get Tourist Sights' do
         expect(tourist_sight[:attributes]).to have_key(:address)
         expect(tourist_sight[:attributes]).to have_key(:place_id)
     end
-    #Commented out second test b/c it takes long enough for one country
+    #Commented out second test b/c it takes long enough for one country without webmock/vcr
     # it 'can return the tourist sights of another country as a json' do
     #   country = "France"
     #
