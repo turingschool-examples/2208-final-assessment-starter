@@ -7,9 +7,9 @@ RSpec.describe TouristSightsService do
         expect(response).to be_a Hash
         expect(response[features]).to be_a Array
         expect(response[features].first).to be_a Hash
-        expect(response[features].first).to have_key :name
-        expect(response[features].first).to have_key :latitude
-        expect(response[features].first).to have_key :longitude
-        expect(response[features].first).to have_key :country
+        expect(response[features].first[properties]).to be_a Hash
+        expect(response[features].first[properties]).to have_key :name
+        expect(response[features].first[properties]).to have_key :formatted
+        expect(response[features].first).to have_key :place_id
     end 
 end 
