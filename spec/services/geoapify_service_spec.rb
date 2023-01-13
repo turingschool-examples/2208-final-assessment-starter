@@ -12,9 +12,9 @@ RSpec.describe GeoapifyService do
 
       let!(:france) { CountryFacade.capital_info("france") }
 
-      it 'finds " " based off lat and lon coordinates', :vcr do
+      it 'finds tourist sights within a 2000m radius based off lat and lon coordinates', :vcr do
 
-        response = GeoapifyService.tourism_sites(france.latitude, france.longitude)
+        response = GeoapifyService.tourist_sites(france.latitude, france.longitude)
 
         expect(response).to have_key :features
         expect(response[:features]).to be_a Array

@@ -6,7 +6,7 @@ class GeoapifyService
     end
   end
 
-  def self.tourism_sites(lat,lon)
+  def self.tourist_sites(lat,lon)
     response = conn.get("/v2/places?categories=tourism.sights&filter=circle:#{lon},#{lat},2000&bias=proximity:#{lon},#{lat}")
     JSON.parse(response.body, symbolize_names: true)
   end

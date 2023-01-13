@@ -2,8 +2,7 @@ class Api::V1::TouristSightsController < ApplicationController
 
 def index
   country = params[:country]
-  capital = CountryFacade.capital_info(country)
-  sights = GeoapifyService.tourism_sites(capital.latitude, capital.longitude)
+  sights = TouristSiteFacade.tourist_sights(country)
   render json: sights
 end
 
