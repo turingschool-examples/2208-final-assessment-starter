@@ -1,0 +1,153 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/darbysmith/turing_work/3mod/ics/2208-final-assessment-starter/app/facades/country_facade.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          3,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Users/darbysmith/turing_work/3mod/ics/2208-final-assessment-starter/app/facades/tourist_sight_facade.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          40,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/darbysmith/turing_work/3mod/ics/2208-final-assessment-starter/app/poro/capital.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          4,
+          4,
+          4,
+          4,
+          4,
+          null,
+          null
+        ]
+      },
+      "/Users/darbysmith/turing_work/3mod/ics/2208-final-assessment-starter/app/poro/tourist_sight.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          41,
+          41,
+          41,
+          null,
+          null
+        ]
+      },
+      "/Users/darbysmith/turing_work/3mod/ics/2208-final-assessment-starter/app/services/countries_now_service.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          4,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null
+        ]
+      },
+      "/Users/darbysmith/turing_work/3mod/ics/2208-final-assessment-starter/app/services/geocoding_service.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          4,
+          null,
+          null,
+          1,
+          4,
+          4,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/darbysmith/turing_work/3mod/ics/2208-final-assessment-starter/app/services/places_service.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          3,
+          null,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Users/darbysmith/turing_work/3mod/ics/2208-final-assessment-starter/app/controllers/api/v1/capitals_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/darbysmith/turing_work/3mod/ics/2208-final-assessment-starter/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/darbysmith/turing_work/3mod/ics/2208-final-assessment-starter/app/serializers/capital_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          2,
+          1,
+          null
+        ]
+      },
+      "/Users/darbysmith/turing_work/3mod/ics/2208-final-assessment-starter/app/controllers/api/v1/tourist_sights_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/darbysmith/turing_work/3mod/ics/2208-final-assessment-starter/app/serializers/tourist_sight_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          21,
+          1,
+          null
+        ]
+      }
+    },
+    "timestamp": 1673630188
+  }
+}
