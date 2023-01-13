@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   namespace :api do 
     namespace :v1 do 
       get '/capital_info', to: 'capitals#show'
+      get '/tourist_sights', to: 'tourist_sights#search'
     end 
   end 
 end
