@@ -13,7 +13,7 @@ RSpec.describe TouristSightFacade do
     it 'returns relevant info for tourist sights' do
       expect(tourist_sights).to be_an Array
       expect(tourist_sights.first.address).to be_a String
-      expect(tourist_sights.first.id).to be_a String
+      expect(tourist_sights.first.place_id).to be_a String
       expect(tourist_sights.first.name).to be_an String
     end
   end
