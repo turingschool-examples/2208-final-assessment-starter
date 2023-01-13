@@ -1,4 +1,4 @@
-class SightsFacade 
+class TouristSightsFacade 
   def self.sights_info(country)
     capital = CountryFacade.capital_info(country)
     response = service.get_sights(capital.longitude, capital.latitude)
