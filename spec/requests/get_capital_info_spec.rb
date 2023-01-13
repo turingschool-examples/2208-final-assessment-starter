@@ -21,4 +21,16 @@ RSpec.describe 'Get Capital Info', :vcr do
         expect(parsed_response[:data][:attributes]).to have_key(:latitude)
         expect(parsed_response[:data][:attributes]).to have_key(:longitude)
     end
+
+    it "edge case for England logic" do
+      country = "England"
+
+      get "/api/v1/capital_info?country=#{country}"
+
+      expect(response).to be_successful
+
+      parsed_response = JSON.parse(response.body,symbolize_names: true)
+
+      expect(parsed_response[:data][:attributes][:country]).to eq("United kingdom")
+    end
 end
