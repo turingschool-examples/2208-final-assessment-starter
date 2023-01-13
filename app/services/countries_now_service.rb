@@ -1,10 +1,10 @@
-class CountriesNowService 
+class CountriesNowService
     def self.get_capital_city(country)
-        response = conn.get("/api/v0.1/countries/capital/q?country=#{country}") 
-        JSON.parse(response.body,symbolize_names: true)
-    end 
+        response = conn.get("/api/v0.1/countries/capital/q?country=#{country}")
+        JSON.parse(response.body, symbolize_names: true)
+    end
 
-    def self.conn 
+    def self.conn
         Faraday.new("https://countriesnow.space")
-    end 
-end 
+    end
+end
