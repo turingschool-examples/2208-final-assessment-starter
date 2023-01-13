@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe 'Get Capital Info' do 
-    it 'returns capital info as json' do 
+RSpec.describe 'Get Capital Info' do
+    it 'returns capital info as json', :vcr do
         country = "France"
 
         get "/api/v1/capital_info?country=#{country}"
@@ -20,5 +20,5 @@ RSpec.describe 'Get Capital Info' do
         expect(parsed_response[:data][:attributes]).to have_key(:country_code)
         expect(parsed_response[:data][:attributes]).to have_key(:latitude)
         expect(parsed_response[:data][:attributes]).to have_key(:longitude)
-    end 
-end 
+    end
+end

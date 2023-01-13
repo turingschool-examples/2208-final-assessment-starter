@@ -12,10 +12,9 @@ RSpec.describe GeoapifyService do
 
       let!(:france) { CountryFacade.capital_info("france") }
 
-      it 'finds " " based off lat and lon coordinates' do
+      it 'finds " " based off lat and lon coordinates', :vcr do
 
         response = GeoapifyService.closest_restaurants(france.latitude, france.longitude)
-        binding.pry
       end
     end
   end
