@@ -10,5 +10,6 @@ RSpec.describe 'tourist sight api' do
 
   it 'response includes name, address, and place_id' do 
     expect(response).to be_successful
+  
   end
 end

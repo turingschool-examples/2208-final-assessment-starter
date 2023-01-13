@@ -1,5 +1,9 @@
 class Api::V1::TouristSightsController < ApplicationController 
   def index 
-    render json: 
+     if blah 
+      render json: TouristSightSerializer.sights(sights)
+     else 
+      render json: #put an error here 
+     end
   end
 end
