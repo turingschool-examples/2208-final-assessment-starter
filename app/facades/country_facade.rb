@@ -5,3 +5,5 @@ class CountryFacade
         Capital.new(capital_info, country)
     end 
 end 
+
+capital_info = CountryFacade.capital_info(params[:country])
