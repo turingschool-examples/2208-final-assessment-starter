@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Capital do
-  it 'exists and has attributes', :vcr do
+  it 'exists and has attributes' do
     capital_info = {
       name: 'Abuja',
       latitude: 9.0643305,
