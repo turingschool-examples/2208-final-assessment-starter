@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe GeocodingService do 
     it '.capital_info' do 
+        VCR.insert_cassette 'geocoding_service'
         response = GeocodingService.capital_info("Paris", "France")
 
         expect(response).to be_a Array
@@ -10,5 +11,6 @@ RSpec.describe GeocodingService do
         expect(response.first).to have_key :latitude
         expect(response.first).to have_key :longitude
         expect(response.first).to have_key :country
+        VCR.eject_cassette
     end 
 end 
