@@ -6,9 +6,9 @@ class GeoapifyService
         JSON.parse(response.body,symbolize_names: true)
     end 
 
-    def self.conn 
+    def self.conn
         Faraday.new("https://api.geoapify.com") do |f|
-            f.headers["apiKey"] = ENV['geoapify_key']
+            f.params["apiKey"] = ENV['geoapify_key']
         end 
     end 
 end
