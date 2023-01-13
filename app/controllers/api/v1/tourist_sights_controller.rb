@@ -3,7 +3,7 @@ class Api::V1::TouristSightsController < ApplicationController
     country = params[:country]
     sights = TouristSightsFacade.sights(country)
 
-    
+
     render json: TouristSightsSerializer.new(sights)
 
   end
