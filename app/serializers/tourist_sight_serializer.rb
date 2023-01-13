@@ -1,4 +1,4 @@
-class TouristSightSerializer # named "places" serializer because this also works for hotels, museums, etc
+class TouristSightSerializer 
   include JSONAPI::Serializer
 
   set_id {nil}
