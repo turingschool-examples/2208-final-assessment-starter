@@ -14,7 +14,8 @@ RSpec.describe GeoapifyService do
 
       it 'finds " " based off lat and lon coordinates', :vcr do
 
-        response = GeoapifyService.closest_restaurants(france.latitude, france.longitude)
+        response = GeoapifyService.tourism_sites(france.latitude, france.longitude)
+
         expect(response).to have_key :features
         expect(response[:features]).to be_a Array
         expect(response[:features].first).to have_key :properties
