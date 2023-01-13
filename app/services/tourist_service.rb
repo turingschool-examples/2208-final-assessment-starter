@@ -1,6 +1,6 @@
 class TouristService
   def self.search_tourist_sites(longitude, latitude)
-    get_url("/v2/places?categories=tourism.sights&filter=circle:#{longitude},#{latitude},2000&bias=proximity:#{longitude},#{latitude}")
+    get_url("/v2/places?categories=tourism.sights&filter=circle:#{longitude},#{latitude},20000&bias=proximity:#{longitude},#{latitude}")
   end
 
   def self.get_url(url)
