@@ -7,8 +7,9 @@ class CountryFacade
 
     def self.tourist_sights(country)
         capital = capital_info(country)
-        GeoapifyService.get_tourist_sights(capital).map |tourist_sight_data| do
-            TouristSight.new(tourist_sight_data)
+        tourist_sights_data = GeoapifyService.get_tourist_sights(capital)[:features]
+        tourist_sights_data.map do |feature|
+            TouristSight.new(feature)
         end
     end
 end 

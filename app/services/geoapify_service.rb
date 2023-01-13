@@ -1,4 +1,4 @@
-class GeocodingService 
+class GeoapifyService 
     def self.get_tourist_sights(capital)
         lon = capital.longitude
         lat = capital.latitude
@@ -11,4 +11,4 @@ class GeocodingService
             f.headers["apiKey"] = ENV['geoapify_key']
         end 
     end 
-end 
+end
