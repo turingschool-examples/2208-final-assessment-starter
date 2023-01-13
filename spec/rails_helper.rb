@@ -1,4 +1,8 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
+require 'simplecov'
+SimpleCov.start do
+  add_filter "spec/rails_helper.rb"
+end
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
@@ -61,4 +65,13 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+end
+
+VCR.configure do |config|
+  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+  config.hook_into :webmock
+  config.filter_sensitive_data('<apiKey>') { ENV['places_api_key'] }
+  config.filter_sensitive_data('<X-Api-Key>') { ENV['api-ninja-key'] }
+  config.configure_rspec_metadata!
+  config.default_cassette_options = { re_record_interval: 7.days }
 end

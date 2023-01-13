@@ -1,0 +1,123 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://countriesnow.space/api/v0.1/countries/capital/q?country=United%20Kingdom
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 13 Jan 2023 18:02:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Ratelimit-Limit:
+      - '400'
+      Ratelimit-Remaining:
+      - '381'
+      Ratelimit-Reset:
+      - '28'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Etag:
+      - W/"83-scnCoI0rW0TmYVArnonD3VyqQbU"
+      Cache-Control:
+      - max-age=74574
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=t0UKbywZZSdj3zPPk2DONIJ4O%2FATHKOXK8PcyzV2ujNctTmDtFINSL6KdDSqDPr2xUrCBtxVHdfVmHoD4Sk116T55JM9bVOfKQYFkg%2BV4qZei7DPJmtjfxKa0xq%2Fr4%2BXgdyTDHYHBumXHAK2YzQ3LtU%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 78900b87ab8d28ff-DEN
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":false,"msg":"country and capitals retrieved","data":{"name":"United
+        Kingdom","capital":"London","iso2":"GB","iso3":"GBR"}}'
+  recorded_at: Fri, 13 Jan 2023 18:02:48 GMT
+- request:
+    method: get
+    uri: https://api.api-ninjas.com/v1/geocoding?city=London&country=United%20Kingdom
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - "<X-Api-Key>"
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '435'
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 13 Jan 2023 18:02:50 GMT
+      X-Amzn-Requestid:
+      - 1c9ecb96-9031-4e09-b960-b95659fc6b30
+      Access-Control-Allow-Origin:
+      - "*"
+      Allow:
+      - GET, OPTIONS, POST
+      Access-Control-Allow-Headers:
+      - "*"
+      X-Amz-Apigw-Id:
+      - esVveF5PPHcFj1Q=
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, POST
+      X-Amzn-Trace-Id:
+      - Root=1-63c19cc9-6f9ef81461fed0722bf72449;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 b86386058101394cf48b049b58f8d788.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-P1
+      X-Amz-Cf-Id:
+      - XpxQY0jGdos-w_xOCkRZEeEoHspjQunhChVdMNKO65v9GX4kM60DcA==
+    body:
+      encoding: UTF-8
+      string: '[{"name": "London", "latitude": 51.5073219, "longitude": -0.1276474,
+        "country": "GB", "state": "England"}, {"name": "City of London", "latitude":
+        51.5156177, "longitude": -0.0919983, "country": "GB", "state": "England"},
+        {"name": "Chelsea", "latitude": 51.4875167, "longitude": -0.1687007, "country":
+        "GB", "state": "England"}, {"name": "Vauxhall", "latitude": 51.4874834, "longitude":
+        -0.1229297, "country": "GB", "state": "England"}]'
+  recorded_at: Fri, 13 Jan 2023 18:02:49 GMT
+recorded_with: VCR 6.1.0
