@@ -21,4 +21,10 @@ RSpec.describe 'Get Capital Info' do
         expect(parsed_response[:data][:attributes]).to have_key(:latitude)
         expect(parsed_response[:data][:attributes]).to have_key(:longitude)
     end 
+
+    it 'returns ' do
+        get "/api/v1/tourist_sights?country=France"
+
+        expect(response).to be_successful
+    end
 end 
