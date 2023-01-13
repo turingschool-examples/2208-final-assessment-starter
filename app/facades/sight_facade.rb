@@ -4,7 +4,7 @@ class SightFacade
     sights = SightService.new.tourism_sights(lon, lat)[:features]
 
     sights.map do |sight|
-      Sight.new(sight[:properties])
+      TouristSight.new(sight[:properties])
     end
   end
 

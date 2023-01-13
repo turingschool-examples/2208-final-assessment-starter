@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Sight' do
+RSpec.describe 'TouristSight' do
   it 'exists, with attributes' do
     attributes = {
       name: 'foo sight name',
@@ -8,11 +8,11 @@ RSpec.describe 'Sight' do
       place_id: 'big foo alphanumeric string'
     }
 
-    sight = Sight.new(attributes)
+    sight = TouristSight.new(attributes)
 
-    expect(sight).to be_a Sight
+    expect(sight).to be_a TouristSight
     expect(sight.name).to eq('foo sight name')
-    expect(sight.address_line2).to eq('foo sight address')
+    expect(sight.address).to eq('foo sight address')
     expect(sight.place_id).to eq('big foo alphanumeric string')
   end
 end

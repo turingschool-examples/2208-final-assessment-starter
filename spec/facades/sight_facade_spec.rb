@@ -6,10 +6,10 @@ RSpec.describe 'SightFacade' do
       capital_info = CountryFacade.capital_info('France')
       sights = SightFacade.new.tourism_sights(capital_info.longitude.to_s, capital_info.latitude.to_s)
 
-      
+
       expect(sights).to be_an Array
       sights.each do |sight|
-        expect(sight).to be_a Sight
+        expect(sight).to be_a TouristSight
       end
     end
   end
