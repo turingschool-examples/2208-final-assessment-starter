@@ -1,4 +1,4 @@
-class TourismSite
+class TouristSite
   attr_reader :name,
               :address,
               :place_id

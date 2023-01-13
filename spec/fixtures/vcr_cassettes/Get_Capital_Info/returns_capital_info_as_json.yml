@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 13 Jan 2023 16:09:54 GMT
+      - Fri, 13 Jan 2023 16:31:38 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41,25 +41,25 @@ http_interactions:
       Etag:
       - W/"7a-Px3q6KxlWJ0pxJ2pkcuIxi/wvvA"
       Cache-Control:
-      - max-age=77917
+      - max-age=76614
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=cWyu5zfeNooLA5xQG4T47ZYGW6%2FBlZBL9pblBN2wwgLqp%2FTj%2FNGquqShXxPHWdJeC3zPNHHi1O4RdRIJsRzJA9LUQsxS17RSZ6pbLNmyT9sJWHqn7XekXyWS3reouim%2Bs7HKcec%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=sepFPBR9Jad%2BmgOMuj1Wr4CBpUyYImekUKlkPyIsuw53emaKvEq82a7UJVSoT01oTN2sIrB53cp1mAc3GqT%2BBhNBOgbN3Um%2BlZ66ZaxGJPQl5atDYhtvT%2F%2BNYgHCcTYkKOxpc%2FY%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 788f66255d701f49-DEN
+      - 788f85f62c5d1f3d-DEN
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
       string: '{"error":false,"msg":"country and capitals retrieved","data":{"name":"France","capital":"Paris","iso2":"FR","iso3":"FRA"}}'
-  recorded_at: Fri, 13 Jan 2023 16:09:54 GMT
+  recorded_at: Fri, 13 Jan 2023 16:31:37 GMT
 - request:
     method: get
     uri: https://api.api-ninjas.com/v1/geocoding?city=Paris&country=France
@@ -87,9 +87,9 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Fri, 13 Jan 2023 16:09:56 GMT
+      - Fri, 13 Jan 2023 16:31:39 GMT
       X-Amzn-Requestid:
-      - '0669a685-2302-498c-a34e-c138393382c2'
+      - 60323b7b-eed2-40bb-9e9f-c573a35f58f9
       Access-Control-Allow-Origin:
       - "*"
       Allow:
@@ -97,19 +97,19 @@ http_interactions:
       Access-Control-Allow-Headers:
       - "*"
       X-Amz-Apigw-Id:
-      - esFNAG7bvHcFWAQ=
+      - esIYnEenvHcFsBw=
       Access-Control-Allow-Methods:
       - GET, OPTIONS, POST
       X-Amzn-Trace-Id:
-      - Root=1-63c18253-78a0cd1e1ee517d4105c3cec;Sampled=0
+      - Root=1-63c1876a-6603d4a105854f94380e86ae;Sampled=0
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 a1fb8be6c85edc28c20536da81db5204.cloudfront.net (CloudFront)
+      - 1.1 12db2441e97bca59edef39f0800ba984.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-P1
       X-Amz-Cf-Id:
-      - AP0aSiOcgDhojeWQngH-TOWBgYc97-vOBCIiH08oVQNi2dLDB3zYgg==
+      - 0ESEmsbBOsTPgLY78ZZFbHqKHf6ucajswuZigjPiInHocpOJzCRNrw==
     body:
       encoding: UTF-8
       string: '[{"name": "Paris", "latitude": 48.8588897, "longitude": 2.3200410217200766,
@@ -120,5 +120,5 @@ http_interactions:
         44.6370913, "longitude": 0.77482, "country": "FR", "state": "Nouvelle-Aquitaine"},
         {"name": "Paris", "latitude": 44.5626798, "longitude": -0.865783, "country":
         "FR", "state": "Nouvelle-Aquitaine"}]'
-  recorded_at: Fri, 13 Jan 2023 16:09:56 GMT
+  recorded_at: Fri, 13 Jan 2023 16:31:39 GMT
 recorded_with: VCR 6.1.0
