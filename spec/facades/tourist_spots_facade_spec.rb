@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe TouristSpotFacade do 
+RSpec.describe TouristSpotsFacade do 
     it '.capital_info' do 
-        tourist_spots = TouristSpotFacade.spots_info("Egypt")
+        tourist_spots = TouristSpotsFacade.spots_info("Egypt")
         expect(tourist_spots).to be_a(Array)
         expect(tourist_spots.first.name).to eq("المركز المصرى للنسجيات")
         expect(tourist_spots.first.address).to eq("Egyptian textile center, 10 ع العبور Side Salah Salem Street, Hadaek Al Obour Buildings, Cairo, 11811, Egypt")

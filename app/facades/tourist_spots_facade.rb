@@ -1,4 +1,4 @@
-class TouristSpotFacade
+class TouristSpotsFacade
   def self.spots_info(country)
       capital_city = CountriesNowService.get_capital_city(country)[:data][:capital]
       capital_info = GeocodingService.capital_info(capital_city,country).first
