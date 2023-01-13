@@ -14,8 +14,10 @@ class Api::V1::TouristSightsController < ApplicationController
 
     parsed = JSON.parse(response.body, symbolize_names: true)
 
-    @tourist_sights = parsed[:features].map do |f|
+    tourist_sights = parsed[:features].map do |f|
       TouristSight.new(f)
     end
+
+    render json: TouristSightSerializer.new(tourist_sights)
   end
 end
