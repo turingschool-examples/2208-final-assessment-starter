@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe GeocodingService do 
-    it '.capital_info' do 
+    it '.capital_info', :vcr do 
         response = GeocodingService.capital_info("Paris", "France")
 
         expect(response).to be_a Array

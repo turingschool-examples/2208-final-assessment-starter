@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://countriesnow.space/api/v0.1/countries/capital/q?country=dog
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Fri, 13 Jan 2023 18:19:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '40'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Ratelimit-Limit:
+      - '400'
+      Ratelimit-Remaining:
+      - '396'
+      Ratelimit-Reset:
+      - '88'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Etag:
+      - W/"28-7q12t32Dl81iTr3UbN9Hq8PLD2U"
+      Cache-Control:
+      - max-age=84539
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3%2F9KNcmN7V8abZPrEsgbA7E3HAuyV2Bb%2BlckU7TsUb14eha3EWSHq%2BTA9EXxoE77o71fIOJmrMMZHNoGHSjhBqLg2t02xgS9Uo4EO1nhCjMRENqADaZLKBgtx6kmxToAPf0OD5TZVyHS8YJ3lFgF9yQ%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 78902452bad41f52-DEN
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"error":true,"msg":"country not found"}'
+  recorded_at: Fri, 13 Jan 2023 18:19:44 GMT
+recorded_with: VCR 6.1.0

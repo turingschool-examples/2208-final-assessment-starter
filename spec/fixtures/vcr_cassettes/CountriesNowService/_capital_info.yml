@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://countriesnow.space/api/v0.1/countries/capital/q?country=France
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 13 Jan 2023 18:06:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Ratelimit-Limit:
+      - '400'
+      Ratelimit-Remaining:
+      - '392'
+      Ratelimit-Reset:
+      - '99'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Etag:
+      - W/"7a-Px3q6KxlWJ0pxJ2pkcuIxi/wvvA"
+      Cache-Control:
+      - max-age=70940
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=17Vq3BuMBAkFY%2F9Cj1DuhOP3Nwowj76b%2FgEAtD03ba3Fhj7rZJhCnBMK4iY0txi27fjcjHyrr9WfJGXHc9EaHv%2BTess%2B0pEh%2B82Rao%2BvrGX5%2B7pjJiXrUaYTYzaDz7zl7JuvUoyVvA4e9C%2FDIW7fqqQ%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7890107a7d7a276a-DEN
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":false,"msg":"country and capitals retrieved","data":{"name":"France","capital":"Paris","iso2":"FR","iso3":"FRA"}}'
+  recorded_at: Fri, 13 Jan 2023 18:06:11 GMT
+recorded_with: VCR 6.1.0
