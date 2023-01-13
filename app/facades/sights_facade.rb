@@ -1,10 +1,9 @@
 class SightsFacade 
-  def self.get_sights(lat, long)
-    data = PlacesService.get_sights(lat, long)
-    require 'pry'; binding.pry
-    sights_data = data[:features]
-    sights_data.map do |s|
-      Sight.new(place[:properties])
+  def self.get_sights(long, lat)
+    data = PlacesService.locations(long, lat)
+    sight_data = data[:features]
+    sight_data.map do |s|
+      Sight.new(s[:properties])
     end
   end
 end

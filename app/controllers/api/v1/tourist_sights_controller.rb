@@ -1,7 +1,7 @@
 class Api::V1::TouristSightsController < ApplicationController 
   def index 
     lat, long = CountryFacade.capital_info(params[:country])
-    sights = SightsFacade.get_sights(lat, long)
+    sights = SightsFacade.get_sights(long, lat)
      if sights
       render json: TouristSightSerializer.sights(sights)
      else 
