@@ -9,7 +9,8 @@ class CountryFacade
         longitude = capital_info(country).longitude
         latitude = capital_info(country).latitude
         tourist_sights = PlacesService.tourist_sights(longitude, latitude)
-        require 'pry'; binding.pry
-        Sight.new(tourist_sights)
+        tourist_sights[:features].map do |tourist_sight|
+            Sight.new(tourist_sight)
+        end
     end
 end 

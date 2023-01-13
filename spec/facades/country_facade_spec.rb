@@ -8,6 +8,8 @@ RSpec.describe CountryFacade do
 
     it '.tourist_sights' do
         sights = CountryFacade.tourist_sights("France")
-        expect(sights).to be_an_instance_of(Sight)
+        sights.each do |sight|
+            expect(sight).to be_an_instance_of(Sight)
+        end
     end
 end 
