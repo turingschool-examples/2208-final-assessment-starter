@@ -9,7 +9,7 @@ RSpec.describe 'Get Tourist Sights' do
         expect(response).to be_successful
 
         parsed_response = JSON.parse(response.body,symbolize_names: true)
-        binding.pry
+        
         expect(parsed_response).to be_a(Hash)
         expect(parsed_response).to have_key(:data)
         expect(parsed_response[:data].first).to have_key(:id)
@@ -19,4 +19,19 @@ RSpec.describe 'Get Tourist Sights' do
         expect(parsed_response[:data].first[:attributes]).to have_key(:address)
         expect(parsed_response[:data].first[:attributes]).to have_key(:place_id)
     end 
+
+    it 'returns custom error json if invalid input is given' do
+      country = ""
+
+      get "/api/v1/tourist_sights?country=#{country}"
+
+      parsed_response = JSON.parse(response.body,symbolize_names: true)
+      
+      expect(response.status).to eq(500)
+      expect(parsed_response).to eq({
+        status: "error",
+        message: "Please enter valid country. Example: if England does not work, try United Kingdom.",
+        code: "500"
+      })
+    end
 end 
