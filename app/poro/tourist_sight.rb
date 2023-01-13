@@ -7,4 +7,8 @@ class TouristSight
     @address2 = data[:properties][:address_line2]
     @place_id = data[:properties][:place_id]
   end
+
+  def full_address
+    "#{self.address1}, #{self.address2}"
+  end
 end
