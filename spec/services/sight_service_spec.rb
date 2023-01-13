@@ -2,8 +2,10 @@ require 'rails_helper'
 
 RSpec.describe 'SightService' do
   describe '#tourism_sights' do
-    it 'returns tourism data' do
-      sights = SightService.new.tourism_sights
+    it 'returns tourism sight data' do
+      lon = '-87.770231'
+      lat = '41.878968'
+      sights = SightService.new.tourism_sights(lon, lat)
 
       expect(sights).to be_a Hash
       expect(sights).to have_key :features
@@ -13,6 +15,11 @@ RSpec.describe 'SightService' do
 
       sights[:features].each do |feature|
         expect(feature).to be_a Hash
+        expect(feature).to have_key :properties
+        expect(feature[:properties]).to be_a Hash
+        expect(feature[:properties]).to have_key :name
+        expect(feature[:properties]).to have_key :address_line2
+        expect(feature[:properties]).to have_key :place_id
       end
     end
   end
