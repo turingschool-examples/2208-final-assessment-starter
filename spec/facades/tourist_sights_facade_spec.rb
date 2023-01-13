@@ -1,13 +1,13 @@
 require 'rails_helper'
 
-RSpec.describe GeoapifyFacade do
-  describe 'gets endpoints from geoapify' do
+RSpec.describe TouristSightsFacade do
+ describe 'gets endpoints from geoapify' do
     it 'instantiates' do
-      expect(GeoapifyFacade.new).to be_a(GeoapifyFacade)
+      expect(TouristSightsFacade.new).to be_a(TouristSightsFacade)
     end
 
     it 'gets tourist sights info' do
-      sights = GeoapifyFacade.tourist_info(48.8566, 2.3522)
+      sights = TouristSightsFacade.sight("France")
       # require 'pry'; binding.pry
 
       expect(sights).to be_a(Array)
