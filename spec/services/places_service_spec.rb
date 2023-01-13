@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe PlacesService do
   it 'returns, as a response, a hash containing an array called features with each feature/element being a hash with information on a place of interest' do
-      response = PlacesService.get_tourist_spots("31.2357257", "30.0443879") #Egypt, Cairo
+      response = PlacesService.get_tourist_sights("31.2357257", "30.0443879") #Egypt, Cairo
 
       expect(response).to be_a Hash
       expect(response).to have_key :type
