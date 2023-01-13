@@ -19,7 +19,7 @@ RSpec.describe "Tourist Sights API" do
         expect(response).to have_http_status(200)
       end
 
-      it "returns tourist sights" do
+      it "returns tourist sights", :vcr do
         json = JSON.parse(response.body, symbolize_names: true)
 
         expect(json).to be_a Hash
@@ -40,6 +40,24 @@ RSpec.describe "Tourist Sights API" do
         expect(json[:data].first[:attributes][:name]).to be_a(String).or(be(nil))
         expect(json[:data].first[:attributes][:address]).to be_a String
         expect(json[:data].first[:attributes][:place_id]).to be_a String
+      end
+    end
+
+    describe "When the country input is invalid" do
+      it "returns status 404", :vcr do
+        get "/api/v1/tourist_sights?country=frenc3"
+
+        expect(response).to have_http_status(404)
+      end
+
+      it "Returns an error message", :vcr do
+        get "/api/v1/tourist_sights?country=frenc3"
+
+        json = JSON.parse(response.body, symbolize_names: true)
+
+        expect(json).to be_a Hash
+        expect(json).to have_key :error
+        expect(json[:error]).to be_a String
       end
     end
   end
