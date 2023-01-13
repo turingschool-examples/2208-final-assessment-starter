@@ -27,9 +27,9 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Fri, 13 Jan 2023 17:26:20 GMT
+      - Fri, 13 Jan 2023 18:06:12 GMT
       X-Amzn-Requestid:
-      - 926d11c4-ebec-4b0a-a2f6-fbad8aaa3750
+      - 4362d589-dc09-457d-a7d8-23bfbb92032a
       Access-Control-Allow-Origin:
       - "*"
       Allow:
@@ -37,19 +37,19 @@ http_interactions:
       Access-Control-Allow-Headers:
       - "*"
       X-Amz-Apigw-Id:
-      - esQZQGiOvHcFlkg=
+      - esWPIHiLvHcFm8A=
       Access-Control-Allow-Methods:
       - GET, OPTIONS, POST
       X-Amzn-Trace-Id:
-      - Root=1-63c1943b-5633e85421f39cbb28f744ad;Sampled=0
+      - Root=1-63c19d93-52aebd0f6f1425ef28db8f39;Sampled=0
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 f0ef5666a43050928ff9758d51713e72.cloudfront.net (CloudFront)
+      - 1.1 89771419757f75b08f6c8fd411f8ef54.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-P1
       X-Amz-Cf-Id:
-      - 1YzBxe7aH5XaArkNbaOLmgQuoKJU9L03JnZvR520xvNhDdio18YNRA==
+      - vmrwoBjv2pZ93NPtHwiC-7huPb_lxTGmpgedt1zOzbfv7EbgQEc2bQ==
     body:
       encoding: UTF-8
       string: '[{"name": "Paris", "latitude": 48.8588897, "longitude": 2.3200410217200766,
@@ -60,5 +60,5 @@ http_interactions:
         44.6370913, "longitude": 0.77482, "country": "FR", "state": "Nouvelle-Aquitaine"},
         {"name": "Paris", "latitude": 44.5626798, "longitude": -0.865783, "country":
         "FR", "state": "Nouvelle-Aquitaine"}]'
-  recorded_at: Fri, 13 Jan 2023 17:26:20 GMT
+  recorded_at: Fri, 13 Jan 2023 18:06:12 GMT
 recorded_with: VCR 6.1.0

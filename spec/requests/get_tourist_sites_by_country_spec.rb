@@ -35,4 +35,12 @@ RSpec.describe 'Get tourist sites near capital city' do
     expect(sites[:data][0][:attributes][:address]).to eq("Zero Milestone, Ellipse Road Northwest, Washington, DC 20500, United States of America")
     expect(sites[:data][0][:attributes][:place_id]).to eq("5145f5d6c0564253c059df9f7d0393724340f00103f9011a2bc6da0100000092030e5a65726f204d696c6573746f6e65")
   end
+
+  it 'sad path, returns error message if country is not valid', :vcr do 
+    get "/api/v1/tourist_sites?country=dog"
+
+    expect(response).to have_http_status 404
+    errors = JSON.parse(response.body, symbolize_names: true)
+    expect(errors[:error]).to eq("cannot find tourist sites without a valid country")
+end
 end

@@ -21,4 +21,13 @@ RSpec.describe 'Get Capital Info' do
         expect(parsed_response[:data][:attributes]).to have_key(:latitude)
         expect(parsed_response[:data][:attributes]).to have_key(:longitude)
     end 
+
+    it 'sad path, returns error message if country is not valid', :vcr do 
+        country = "total"
+
+        get "/api/v1/capital_info?country=#{country}"
+        expect(response).to have_http_status 404
+        errors = JSON.parse(response.body, symbolize_names: true)
+        expect(errors[:error]).to eq("cannot find capital info without a valid country")
+    end
 end 
