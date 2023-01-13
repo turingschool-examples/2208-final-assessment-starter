@@ -1,5 +1,7 @@
 class Api::V1::SightsController < ApplicationController
   def index
-    require 'pry'; binding.pry
+    country = params[:country]
+    sights = CountryFacade.tourist_sights(country)
+    render json: SightsSerializer.new(sights)
   end
 end
