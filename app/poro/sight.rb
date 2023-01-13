@@ -5,8 +5,7 @@ class Sight
 
   def initialize(data)
     @name = data[:name]
-    require 'pry'; binding.pry
-    @address = 
+    @address = "#{data[:name]}, #{data[:street]}, #{data[:postcode]} #{data[:city]}, #{data[:country]}"
     @place_id = data[:place_id]
   end
 end

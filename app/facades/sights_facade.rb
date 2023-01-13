@@ -3,7 +3,6 @@ class SightsFacade
     data = PlacesService.get_sights(lat, long)
     sights_data = data[:features]
     sights_data.map do |s|
-      require 'pry'; binding.pry
       Sight.new(place[:properties])
     end
   end
