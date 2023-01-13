@@ -5,7 +5,9 @@ class PlacesService
           f.params['apiKey'] = ENV['place_key']
   end
 
-  def self.find_places
-    # response = conn.get("/v2/places?categories=tourism.sights&filter=circle:2.3483915,48.8588897,#{radius}&bias=proximity:#{lon},#{lat}")
+  def self.sights_by(lon, lat)
+    response = conn.get("v2/places?categories=tourism.sights&filter=circle:#{lon},#{lat},20000&bias=proximity:#{lon},#{lon}&limit=20")
+    data = JSON.parse(response.body, symbolize_names: true)
   end
+
 end
