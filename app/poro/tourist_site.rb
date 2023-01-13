@@ -1,4 +1,4 @@
-class Place 
+class TouristSite 
   attr_reader :name, :address, :place_id
   def initialize(attributes)
     @name = attributes[:properties][:name]

@@ -1,9 +1,9 @@
-class PlacesFacade 
+class TouristSitesFacade 
   def self.tourist_sites(country)
     long = CountryFacade.capital_info(country).longitude
     lat = CountryFacade.capital_info(country).latitude
-    PlacesService.nearby_tourist_sites(long, lat)[:features].map do |site|
-      Place.new(site)
+    TouristSitesService.nearby_tourist_sites(long, lat)[:features].map do |site|
+      TouristSite.new(site)
     end
   end
 

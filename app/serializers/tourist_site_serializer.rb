@@ -1,4 +1,4 @@
-class PlacesSerializer 
+class TouristSiteSerializer 
   include JSONAPI::Serializer
   set_id {nil}
 
