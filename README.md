@@ -1,4 +1,15 @@
-# Final Assessment 
+## API consumption and exposure
+
+I am actively seeking employment!
+
+If this profile or repo looks promising, please contact me! I'd love to start a conversation: <MichaelDavidMarchand@gmail.com>
+
+|ToC|
+|---|
+[Set up](#set-up)
+[API keys needed](#api-keys-needed)
+[To Do](#to-do)
+
 
 ## Set Up 
 
@@ -31,10 +42,17 @@ To get your repo set up, please do the following:
     }
     ```
 
-## Get Prepped for the New API 
+## API keys needed
 
-In tomorrow's assessment, you'll be using the [Places API](https://apidocs.geoapify.com/docs/places/#about). **You'll need an API key for this service.** Please read the following instructions carefully:
+Using the [Places API](https://apidocs.geoapify.com/docs/places/#about). **You'll need an API key for this service.** Please read the following instructions carefully:
 
 1. Visit the [Places API](https://apidocs.geoapify.com/docs/places/#about) to see the capabilities of the API to consume.
 2. Follow [these](https://apidocs.geoapify.com/docs/places/#about:~:text=Authentication%20and%20API%20key) directions to set up an account and get your API key set up. 
 3. We suggest that you set up Postman to call several different endpoints. Experiment with different parameters so you can see what they do, how you could use things to filter data, etc.
+
+## To do
+
+- Edit the readme
+- Add a project title
+- Rename the repo 
+- is there a place for a video? 
